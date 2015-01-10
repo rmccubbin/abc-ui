@@ -1,0 +1,17 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/core-ajax/core-ajax.html">
+<polymer-element name="abc-commit-count" >
+  <template>
+  <p> You have made {{commitCount}} commits today. {{remaining}} remaining!</p>
+  </template>
+  <script>
+    (function () {
+      Polymer({
+        ready: function() {
+	  this.commitCount = 0;
+	  this.remaining = 10;
+	}
+      });
+    })();
+  </script>
+</polymer-element>
